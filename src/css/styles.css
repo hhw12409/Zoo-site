@@ -6,3 +6,68 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
+header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+header nav {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  font-size: 32px;
+  text-transform: lowercase;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+  cursor: pointer;
+}
+header nav ul:hover {
+  background-color: gainsboro;
+}
+header nav ul li {
+  margin-right: 50px;
+}
+header nav ul:first-child:hover li:not(:first-child) {
+  color: white !important;
+}
+header nav ul:first-child li:first-child {
+  margin-right: 120px;
+}
+header nav ul:first-child li:not(:first-child) {
+  color: gainsboro;
+  margin-right: 50px;
+}
+
+main {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 50vh;
+}
+main article {
+  cursor: pointer;
+}
+main article img {
+  width: 100%;
+  height: 90%;
+}
+main article h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+main article div {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  height: 10%;
+  padding-left: 10px;
+}
